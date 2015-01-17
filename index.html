@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id="container">
+		<h1>Click to Start!</h1>
+		<button onclick="RPS()" id="startButton">Click Here to Play Rock Paper Scissors!	
+		</button>
+		<br>
+		<span id="output"></span>
+	</div>
+
+
+<script src="js/rps.js"></script>
+
+</body>
+</html>
+
+
+
+<!-- ========================
+rules: 
+========================
+
+Paper beats Rock
+Rock beats Scissors
+Scissors beat Paper
+
+(0) = rock
+(1) = paper
+(2) = scissors
+
+If input = choices.indexOf("rock")
+
+===================================
+More Logic:
+===================================
+
+Make rock, paper, and scissors equivalent to numbers. See above. 
+
+If input = computer {
+	it's a tie
+}
+if ((input = rock) && (computer = rock)) {
+	return: it's a tie. 
+}
+if ((input = rock))
